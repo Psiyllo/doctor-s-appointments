@@ -8,13 +8,13 @@ import java.util.Set;
 @Entity
 public class patient extends users {
     @OneToMany(mappedBy = "paciente")
-    private Set<Consulta> consultas;
+    private Set<medical_appointment> consultas;
 
-    public Set<Consulta> getConsultas() {
+    public Set<medical_appointment> getConsultas() {
         return consultas;
     }
 
-    public void setConsultas(Set<Consulta> consultas) {
+    public void setConsultas(Set<medical_appointment> consultas) {
         this.consultas = consultas;
     }
 }

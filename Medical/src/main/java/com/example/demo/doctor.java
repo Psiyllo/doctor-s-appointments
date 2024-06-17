@@ -10,7 +10,7 @@ public class doctor extends users {
     private String especialidade;
 
     @OneToMany(mappedBy = "medico")
-    private Set<Consulta> consultas;
+    private Set<medical_appointment> consultas;
 
     public String getEspecialidade() {
         return especialidade;
@@ -20,11 +20,11 @@ public class doctor extends users {
         this.especialidade = especialidade;
     }
 
-    public Set<Consulta> getConsultas() {
+    public Set<medical_appointment> getConsultas() {
         return consultas;
     }
 
-    public void setConsultas(Set<Consulta> consultas) {
+    public void setConsultas(Set<medical_appointment> consultas) {
         this.consultas = consultas;
     }
 }
