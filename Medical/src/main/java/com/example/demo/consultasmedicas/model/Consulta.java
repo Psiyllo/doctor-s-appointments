@@ -1,20 +1,19 @@
-package com.example.demo;
+package com.example.demo.consultasmedicas.model;
 
 import jakarta.persistence.*;
-
 import java.time.LocalDateTime;
 
 @Entity
-public class medical_appointment {
+public class Consulta {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     @ManyToOne
-    private doctor medico;
+    private Medico medico;
 
     @ManyToOne
-    private patient paciente;
+    private Paciente paciente;
 
     private LocalDateTime dataHora;
 
@@ -28,19 +27,19 @@ public class medical_appointment {
         this.id = id;
     }
 
-    public doctor getMedico() {
+    public Medico getMedico() {
         return medico;
     }
 
-    public void setMedico(doctor medico) {
+    public void setMedico(Medico medico) {
         this.medico = medico;
     }
 
-    public patient getPaciente() {
+    public Paciente getPaciente() {
         return paciente;
     }
 
-    public void setPaciente(patient paciente) {
+    public void setPaciente(Paciente paciente) {
         this.paciente = paciente;
     }
 

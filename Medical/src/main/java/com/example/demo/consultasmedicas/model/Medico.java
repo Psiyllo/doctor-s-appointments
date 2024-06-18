@@ -1,4 +1,5 @@
-package com.example.demo;
+package com.example.demo.consultasmedicas.model;
+
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.OneToMany;
@@ -6,11 +7,11 @@ import jakarta.persistence.OneToMany;
 import java.util.Set;
 
 @Entity
-public class doctor extends users {
+public class Medico extends Usuario {
     private String especialidade;
 
     @OneToMany(mappedBy = "medico")
-    private Set<medical_appointment> consultas;
+    private Set<Consulta> consultas;
 
     public String getEspecialidade() {
         return especialidade;
@@ -20,11 +21,11 @@ public class doctor extends users {
         this.especialidade = especialidade;
     }
 
-    public Set<medical_appointment> getConsultas() {
+    public Set<Consulta> getConsultas() {
         return consultas;
     }
 
-    public void setConsultas(Set<medical_appointment> consultas) {
+    public void setConsultas(Set<Consulta> consultas) {
         this.consultas = consultas;
     }
 }
