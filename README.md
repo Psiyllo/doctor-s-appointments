@@ -30,9 +30,52 @@ Este é um projeto de demonstração para um sistema de consultas médicas desen
 
 Para executar o projeto, é necessário configurar o banco de dados PostgreSQL com as seguintes propriedades:
 
-```properties
+properties
 spring.datasource.url=jdbc:postgresql://localhost:5432/consultasdb
 spring.datasource.username=seu_usuario
 spring.datasource.password=sua_senha
 spring.jpa.hibernate.ddl-auto=update
 spring.jpa.show-sql=true
+
+## Como Executar
+
+Para executar o projeto localmente:
+
+1. Clone o repositório.
+2. Configure o PostgreSQL com as propriedades especificadas.
+3. Execute o projeto usando sua IDE preferida ou via linha de comando: `mvn spring-boot:run`.
+
+## Endpoints Disponíveis
+
+### Autenticação:
+
+- `POST /api/auth/login`: Endpoint para autenticação de usuários.
+- `POST /api/auth/register`: Endpoint para registro de novos usuários.
+
+### Consultas:
+
+- `POST /api/consultas`: Cria uma nova consulta.
+- `GET /api/consultas/{id}`: Obtém uma consulta pelo ID.
+- `GET /api/consultas`: Obtém todas as consultas.
+- `DELETE /api/consultas/{id}`: Deleta uma consulta pelo ID.
+
+### Usuários:
+
+- `GET /api/usuarios/{id}`: Obtém um usuário pelo ID.
+- `GET /api/usuarios`: Obtém todos os usuários.
+- `POST /api/usuarios`: Cria um novo usuário.
+- `PUT /api/usuarios/{id}`: Atualiza um usuário pelo ID.
+- `DELETE /api/usuarios/{id}`: Deleta um usuário pelo ID.
+
+## Contribuição
+
+Sinta-se à vontade para contribuir com melhorias neste projeto. Caso encontre algum problema, por favor, abra uma issue no [repositório](link_do_seu_repositorio).
+
+## Licença
+
+Este projeto está licenciado sob a [MIT License](https://opensource.org/licenses/MIT).
+
+---
+
+**Observação: Este readme está em desenvolvimento e pode sofrer alterações. Obrigado pela compreensão enquanto trabalhamos para melhorar o projeto.**
+
