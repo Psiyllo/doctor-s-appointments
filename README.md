@@ -30,12 +30,13 @@ Este é um projeto de demonstração para um sistema de consultas médicas desen
 
 Para executar o projeto, é necessário configurar o banco de dados PostgreSQL com as seguintes propriedades:
 
-properties
+```properties
 spring.datasource.url=jdbc:postgresql://localhost:5432/consultasdb
 spring.datasource.username=seu_usuario
 spring.datasource.password=sua_senha
 spring.jpa.hibernate.ddl-auto=update
 spring.jpa.show-sql=true
+```
 
 ## Como Executar
 
