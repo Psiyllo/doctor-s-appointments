@@ -70,7 +70,7 @@ Para executar o projeto localmente:
 
 ## Contribuição
 
-Sinta-se à vontade para contribuir com melhorias neste projeto. Caso encontre algum problema, por favor, abra uma issue no [repositório]([link_do_seu_repositorio](https://github.com/Psiyllo/doctor-s-appointments.git).
+Sinta-se à vontade para contribuir com melhorias neste projeto. Caso encontre algum problema, por favor, abra uma issue no [repositório](https://github.com/Psiyllo/doctor-s-appointments.git).
 
 ---
 
