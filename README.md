@@ -70,11 +70,7 @@ Para executar o projeto localmente:
 
 ## Contribuição
 
-Sinta-se à vontade para contribuir com melhorias neste projeto. Caso encontre algum problema, por favor, abra uma issue no [repositório](link_do_seu_repositorio).
-
-## Licença
-
-Este projeto está licenciado sob a [MIT License](https://opensource.org/licenses/MIT).
+Sinta-se à vontade para contribuir com melhorias neste projeto. Caso encontre algum problema, por favor, abra uma issue no [repositório]([link_do_seu_repositorio](https://github.com/Psiyllo/doctor-s-appointments.git).
 
 ---
 
