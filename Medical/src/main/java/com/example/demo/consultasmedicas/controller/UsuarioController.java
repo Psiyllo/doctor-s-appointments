@@ -2,10 +2,12 @@ package com.example.demo.consultasmedicas.controller;
 
 import com.example.demo.consultasmedicas.model.Usuario;
 import com.example.demo.consultasmedicas.service.UsuarioService;
+import com.example.demo.consultasmedicas.util.CustomException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.Optional;
 
 @RestController
 @RequestMapping("/api/usuarios")
@@ -15,7 +17,8 @@ public class UsuarioController {
 
     @GetMapping("/{id}")
     public Usuario obterUsuarioPorId(@PathVariable Long id) {
-        return usuarioService.obterUsuarioPorId(id);
+        Optional<Usuario> usuario = usuarioService.obterUsuarioPorId(id);
+        return usuario.orElseThrow(() -> new CustomException("Usuário não encontrado com id: " + id));
     }
 
     @GetMapping
